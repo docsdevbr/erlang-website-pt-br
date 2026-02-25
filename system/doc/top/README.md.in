@@ -1,0 +1,67 @@
+---
+# Copyright (c) 1996-2026 Ericsson AB. All rights reserved.
+#
+# Documentation licensed under the Apache License, Version 2.0.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/erlang/otp/blob/-/LICENSE.txt
+
+source_url: https://github.com/erlang/otp/blob/master/system/doc/top/README.md.in
+revision: 0191c1dc1d248370243f73bb53a1552c47929ac7
+status: ready
+---
+
+# Erlang/OTP %OTP-VSN%
+
+Bem-vinda ao Erlang/OTP, um ambiente de desenvolvimento completo para
+programação concorrente.
+
+A linguagem Erlang é descrita no
+[Manual de Referência do Erlang](`e:system:reference_manual.md`).
+Um tutorial de Erlang pode ser encontrado em
+[Começando com o Erlang](`e:system:getting_started.md`).
+
+Além da documentação aqui apresentada, o Erlang é descrito em diversos livros,
+como:
+
+* ["Introducing Erlang"][1] da O'Reilly.
+* ["Learn You Some Erlang for Great Good!"][2] da No Starch Press.
+* ["Erlang Programming"][3] da O'Reilly.
+* ["Programming Erlang"][4] da Pragmatic.
+* ["Erlang and OTP in Action"][5] da Manning.
+* ["Designing for Scalability with Erlang/OTP"][6] da O'Reilly.
+
+Esses livros são altamente recomendados como ponto de partida para o aprendizado
+de Erlang.
+
+Mais informações sobre recursos de aprendizado, editores e outras ferramentas
+podem ser encontradas em nosso
+[site oficial do Erlang](https://erlang.org/community).
+
+- O Erlang/OTP é dividido em várias [aplicações OTP](`m:application`).
+  Uma aplicação normalmente contém módulos Erlang.
+  Algumas aplicações OTP, como a interface C
+  [erl\_interface](`e:erl_interface:index.html`), são escritos em outras
+  linguagens e não possuem módulos Erlang.
+- Ao desenvolver com Erlang/OTP, você geralmente testa seus programas a partir
+  do shell interativo (consulte
+  [Introdução ao Erlang](`e:system:getting_started.md`)), onde você pode chamar
+  funções individuais.
+  Também estão disponíveis diversas ferramentas, como o
+  [Depurador](`e:debugger:index.html`) gráfico e a
+  [ferramenta Observer](`e:observer:index.html`) para inspeção de informações
+  do sistema, tabelas ETS e Mnesia, etc.
+- Para perguntas e discussões sobre Erlang, recomendamos o
+  [ErlangForums](https://erlangforums.com).
+- Há também a seção
+  [Perguntas Frequentes](https://www.erlang.org/faq/faq.html), que pode ser de
+  seu interesse.
+- Informações adicionais e links de interesse para pessoas programadoras Erlang
+  podem ser encontrados no site de código aberto do Erlang
+  https://www.erlang.org.
+
+[1]: https://www.oreilly.com/library/view/introducing-erlang-2nd/9781491973363
+[2]: https://www.nostarch.com/erlang
+[3]: https://www.oreilly.com/library/view/erlang-programming/9780596803940
+[4]: https://www.pragprog.com/titles/jaerlang2/programming-erlang-2nd-edition/
+[5]: https://www.manning.com/logan
+[6]: https://shop.oreilly.com/product/0636920024149.do
