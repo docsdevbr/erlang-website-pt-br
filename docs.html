@@ -1,0 +1,74 @@
+---
+# SPDX-FileCopyrightText: 1996-2026 Ericsson AB. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+# Documentation licensed under the Apache License, Version 2.0.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/docsdevbr/erlang-website-pt-br/blob/-/LICENSES/Apache-2.0.txt
+
+source_url: https://github.com/erlang/erlang-org/blob/master/docs.html
+revision: 4a5824258edb23c0191ccc3c891803f548bb7dd4
+status: ready
+
+layout: default
+title: "Documentação"
+css: docs
+---
+
+<div class="container body border-top pt-4">
+  <main class="main">
+    {% for category in site.data.doc-links %}
+    <h5 class="border-bottom">{{ category[0] }}</h5>
+    <dl class="ps-3">
+      {% for link in category[1] %}
+      <dt><a href="{{ link.link | relative_url }}">{{link.name}}</a></dt>
+      <dd>{{ link.description }}</dd>
+      {% endfor %}
+    </dl>
+    {% endfor %}
+  </main>
+  <aside class="sidebar">
+    <div class="faq">
+      <p>
+        <a href="{{ '/faq/faq.html' | relative_url }}">
+          Perguntas frequentes sobre Erlang/OTP
+        </a>
+        - Perguntas frequentes sobre todos os aspectos do Erlang
+      </p>
+    </div>
+
+    <div class="search row">
+      <div class="col-md-12 col-3" id="docsearch"></div>
+      <div class="col-md-12 col">
+        <p class="pt-md-2">Pesquise na documentação por nomes de funções,
+          módulos ou aplicações semelhantes à string de pesquisa.
+          Tente, por exemplo, "list foldl" ou "mnesia"</p>
+      </div>
+    </div>
+
+    <div class="books">
+      <p class="border-top pt-3">Livros sobre o Erlang</p>
+      <div>
+        {% for category in site.data.doc-links %}
+        {% for book in category[1] %}
+        {% if book.icon %}
+        <a target="_blank" href="{{ book.link }}">
+          <img src="{{ '/assets/img/books/' | append: book.icon | relative_url }}" height="120" width="91"
+               class="img-thumbnail" alt="Capa do livro {{ book.name }}">
+        </a>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </div>
+      <a href="https://duckduckgo.com/?q=erlang+programming+language+books">E muito mais...</a>
+    </div>
+  </aside>
+</div>
+<script>
+  {%
+    assign
+    majorReleases = site.releases | reverse | first %
+  }
+  _docsearch_version = "{{ majorReleases.release }}";
+</script>
+<script src="{{ '/assets/js/doc-search.bundle.js' | relative_url }}"></script>
