@@ -13,11 +13,11 @@ status: ready
 
 # Erlang/OTP %OTP-VSN%
 
-Bem-vinda ao Erlang/OTP, um ambiente de desenvolvimento completo para
+Boas vindas ao Erlang/OTP, um ambiente de desenvolvimento completo para
 programação concorrente.
 
 A linguagem Erlang é descrita no
-[Manual de Referência do Erlang](`e:system:reference_manual.md`).
+[Manual de referência do Erlang](`e:system:reference_manual.md`).
 Um tutorial de Erlang pode ser encontrado em
 [Começando com o Erlang](`e:system:getting_started.md`).
 
@@ -54,7 +54,7 @@ podem ser encontradas em nosso
 - Para perguntas e discussões sobre Erlang, recomendamos o
   [ErlangForums](https://erlangforums.com).
 - Há também a seção
-  [Perguntas Frequentes](https://www.erlang.org/faq/faq.html), que pode ser de
+  [Perguntas frequentes](https://www.erlang.org/faq/faq.html), que pode ser de
   seu interesse.
 - Informações adicionais e links de interesse para pessoas programadoras Erlang
   podem ser encontrados no site de código aberto do Erlang
