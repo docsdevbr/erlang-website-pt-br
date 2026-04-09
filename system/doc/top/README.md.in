@@ -1,9 +1,10 @@
 ---
 # Copyright (c) 1996-2026 Ericsson AB. All rights reserved.
 #
+# SPDX-License-Identifier: Apache-2.0
 # Documentation licensed under the Apache License, Version 2.0.
 # The original work was translated from English into Brazilian Portuguese.
-# https://github.com/erlang/otp/blob/-/LICENSE.txt
+# https://github.com/docsdevbr/erlang-doc-pt-br/blob/-/LICENSES/Apache-2.0.txt
 
 source_url: https://github.com/erlang/otp/blob/maint-28/system/doc/top/README.md.in
 revision: 0191c1dc1d248370243f73bb53a1552c47929ac7
