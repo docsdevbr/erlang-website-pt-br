@@ -1,0 +1,108 @@
+# SPDX-FileCopyrightText: 1996-2026 Ericsson AB. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+# Documentation licensed under the Apache License, Version 2.0.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/docsdevbr/erlang-website-pt-br/blob/-/LICENSES/Apache-2.0.txt
+
+source_url: https://github.com/erlang/erlang-org/blob/master/_data/doc-links.yaml
+revision: 7721293a7f24f24bb3b0238b822cbaf12251a381
+status: ready
+
+Documentação online:
+  - name: Documentação do Erlang/OTP
+    link: /doc/
+    description: >-
+      Documentação online da versão mais recente do sistema de tempo de
+      execução, bem como de todas as bibliotecas.
+  - name: "Programming Erlang: Software for a Concurrent World (Limited Free)"
+    link: https://erlang.org/download/erlang-book-part1.pdf
+    description: >-
+      Programming Erlang: Software for a Concurrent World (Joe Armstrong) é um
+      livro sobre Erlang escrito por uma das pessoas inventoras originais,
+      publicado em 2007.
+      Você pode comprá-lo em formato impresso na Amazon e em outras livrarias
+      online, ou diretamente da editora.
+  - name: Manual de referência do Erlang - Guia da pessoa usuária
+    description: Descrição da linguagem Erlang
+    link: https://erlang.org/doc/reference_manual/users_guide.html
+  - name: Guia de eficiência - Guia da pessoa usuária
+    description: >-
+      Um guia que ensina o que usar e o que evitar em Erlang, bem como a
+      implementação de certos recursos do Erlang.
+    link: https://erlang.org/doc/efficiency_guide/users_guide.html
+  - name: Princípios do sistema - Guia da pessoa usuária
+    description: Um guia sobre diversos princípios do sistema Erlang.
+    link: https://erlang.org/doc/system_principles/system_principles.html
+  - name: Princípios de design do OTP - Guia da pessoa usuária
+    description: >-
+      Os princípios de design do OTP definem como estruturar o código Erlang em
+      termos de processos, módulos e diretórios.
+    link: https://erlang.org/doc/design_principles/users_guide.html
+  - name: Árvore de versões do OTP
+    description: >-
+      Todas as versões do OTP lançadas desde a versão 17.0, com links para as
+      tags do código-fonte no GitHub e para os arquivos README.
+      A partir da versão 23 do OTP, os instaladores para Windows de todos os
+      patches também podem ser baixados daqui.
+    link: https://erlang.org/download/otp_versions_tree.html
+  - name: >-
+      Diretrizes de Segurança para Codificação e Reforço de Implantação da EEF
+    description: >-
+      Melhores práticas para escrever e executar aplicações na BEAM, pelo Grupo
+      de Trabalho de Segurança da Erlang Ecosystem Foundation.
+    link: https://security.erlef.org/secure_coding_and_deployment_hardening/
+
+Livros sobre Erlang:
+  - name: "Programming Erlang: Software for a Concurrent World (Full Edition)"
+    description: >-
+      Programming Erlang: Software for a Concurrent World (Joe Armstrong) é um
+      livro sobre Erlang escrito por uma das pessoas inventoras originais,
+      publicado em 2007.
+      Você pode comprá-lo em formato impresso na Amazon e em outras livrarias
+      online, ou diretamente da editora.
+    link: https://pragprog.com/titles/jaerlang2/programming-erlang-2nd-edition/
+    icon: jaerlang.jpg
+  - name: Learn You Some Erlang for Great Good!
+    description: >-
+      Learn You Some Erlang for Great Good!, de Fred Hebert é um livro para
+      iniciantes sobre Erlang, publicado em 2013.
+      Está disponível em formato impresso e online.
+    link: https://nostarch.com/erlang
+    icon: lyse.png
+  - name: Erlang Programming
+    description: >-
+      Erlang Programming (A Concurrent Approach to Software Development) por
+      Francesco Cesarini e Simon Thompson foi publicado em 2009.
+      Adquira-o na Amazon, etc., ou diretamente da editora.
+    link: http://oreilly.com/catalog/9780596518189
+    icon: oreilly_programming_erlang.gif
+  - name: Erlang and OTP in Action
+    description: >-
+      Erlang and OTP in Action, de Martin Logan, Eric Merritt e Richard Carlsson
+      foi publicado em 2010.
+      Você pode comprá-lo em diversas livrarias online ou diretamente da
+      editora.
+    link: http://www.manning.com/logan/
+    icon: otp_in_action.jpg
+  - name: Introducing Erlang
+    description: >-
+      Introducing Erlang, de Simon St. Laurent, 2013, é uma introdução ao Erlang
+      para iniciantes.
+      Está disponível diretamente na editora.
+    link: http://shop.oreilly.com/product/0636920025818.do
+    icon: oreilly_erlang.jpg
+  - name: Designing for Scalability with Erlang/OTP
+    description: >-
+      Com este livro prático, você aprenderá como aplicar bibliotecas e técnicas
+      OTP para desenvolver sistemas concorrentes e tolerantes a falhas, sem um
+      único ponto de falha.
+    link: http://shop.oreilly.com/product/0636920024149.do
+    icon: scalability_earlyrelease.gif
+
+Artigos sobre o Erlang:
+  - name: Making reliable distributed systems in the presence of software errors
+    link: https://erlang.org/download/armstrong_thesis_2003.pdf
+    description: >-
+      Tese de doutorado de Joe Armstrong, co-inventor do Erlang, descrevendo as
+      origens do Erlang.
