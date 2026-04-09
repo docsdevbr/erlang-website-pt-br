@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Documentation licensed under the Apache License, Version 2.0.
 # The original work was translated from English into Brazilian Portuguese.
-# https://github.com/docsdevbr/erlang-doc-pt-br/blob/-/LICENSES/Apache-2.0.txt
+# https://github.com/docsdevbr/erlang-website-pt-br/blob/-/LICENSES/Apache-2.0.txt
 
 source_url: https://github.com/erlang/otp/blob/master/system/doc/installation_guide/installation_guide.md
 revision: a87183f1eb847119b6ecc83054bf13c26b8ccfaa
