@@ -1,4 +1,4 @@
-# [erlang-doc-pt-br][page]
+# [erlang-website-pt-br][page]
 
 [![Arquivo README em inglês][badge-readme-en]][readme-en]
 [![Arquivo README em português brasileiro][badge-readme-pt-br]][readme-pt-br]
@@ -7,7 +7,7 @@
 [![Pessoas contribuidoras][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
-Tradução da documentação do Erlang/OTP para português brasileiro.
+Tradução do site do Erlang/OTP para português brasileiro.
 
 ## Contribuindo
 
@@ -33,7 +33,7 @@ Copyright (c) 1996-2026 Ericsson AB. All rights reserved.
 Documentação licenciada sob a [Licença Apache, Versão 2.0][license].<br/>
 A obra original foi traduzida do inglês para o português brasileiro.
 
-[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/erlang-doc-pt-br
+[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/erlang-website-pt-br
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
@@ -41,15 +41,15 @@ A obra original foi traduzida do inglês para o português brasileiro.
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
-[badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-blue
+[badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-dark--green
 
-[badge-reuse]: https://api.reuse.software/badge/github.com/docsdevbr/erlang-doc-pt-br
+[badge-reuse]: https://api.reuse.software/badge/github.com/docsdevbr/erlang-website-pt-br
 
 [code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.md
 
 [contributing]: https://github.com/docsdevbr/.github/blob/main/CONTRIBUTING.md
 
-[contributors]: https://github.com/docsdevbr/erlang-doc-pt-br/graphs/contributors
+[contributors]: https://github.com/docsdevbr/erlang-website-pt-br/graphs/contributors
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
@@ -61,6 +61,6 @@ A obra original foi traduzida do inglês para o português brasileiro.
 
 [readme-pt-br]: README.md
 
-[reuse]: https://api.reuse.software/info/github.com/docsdevbr/erlang-doc-pt-br
+[reuse]: https://api.reuse.software/info/github.com/docsdevbr/erlang-website-pt-br
 
 [sponsor]: https://pt.docs.dev.br/sponsor.html
