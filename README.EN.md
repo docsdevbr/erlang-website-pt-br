@@ -3,6 +3,7 @@
 [![README file in English][badge-readme-en]][readme-en]
 [![README file in Brazilian Portuguese][badge-readme-pt-br]][readme-pt-br]
 [![License: Apache-2.0][badge-license]][license]
+[![REUSE status][badge-reuse]][reuse]
 [![Contributors][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
@@ -42,6 +43,8 @@ The original work was translated from English into Brazilian Portuguese.
 
 [badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-blue
 
+[badge-reuse]: https://api.reuse.software/badge/github.com/docsdevbr/erlang-doc-pt-br
+
 [code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.EN.md
 
 [contributing]: https://github.com/docsdevbr/.github/blob/main/CONTRIBUTING.EN.md
@@ -58,4 +61,6 @@ The original work was translated from English into Brazilian Portuguese.
 
 [readme-pt-br]: README.md
 
-[sponsor]: https://pt.docs.dev.br/sponsor.html
+[reuse]: https://api.reuse.software/info/github.com/docsdevbr/erlang-doc-pt-br
+
+[sponsor]: https://en.docs.dev.br/sponsor.html
