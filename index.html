@@ -1,0 +1,137 @@
+---
+# SPDX-FileCopyrightText: 1996-2026 Ericsson AB. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+# Documentation licensed under the Apache License, Version 2.0.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/docsdevbr/erlang-website-pt-br/blob/-/LICENSES/Apache-2.0.txt
+
+source_url: https://github.com/erlang/erlang-org/blob/master/index.html
+revision: 1a1a8cdd684ade693818aa089d9df9515a6f12fb
+status: ready
+
+layout: default
+title: "Página inicial"
+css: index
+regenerate: true
+---
+
+<div class="bg-erlang-grey">
+  <div class="container banner px-0 px-md-2">
+    <div class="slogan text-center">
+      <h1 class="h4 px-4 pt-4 text-light">
+        Programação funcional prática<br/> para um mundo paralelo
+      </h1>
+      <!-- <h4 class="px-4 pt-4 text-light">
+        Build massively scalable soft real-time systems
+      </h4> -->
+    </div>
+    <div class="download text-center">
+      <!-- We hide the download button on small screens as most likely it is a mobile
+           and no one want to workload Erlang on a mobile -->
+      <div class="btn-group">
+        {% assign majorReleases = site.releases | reverse | first %}
+        <a href="{{ '/downloads' | relative_url }}"
+           class="btn btn-success d-inline-flex align-items-center gap-1">
+          Baixe o Erlang/OTP {{ majorReleases.release }}
+          {% include svg-symbol.html symbol="download" width="20" height="20" %}
+        </a>
+      </div>
+    </div>
+    <!-- We have two different examples that are shown
+         depending on the size of the viewport -->
+    <div class="example">
+      {% assign sizes = "large,small" | split: "," %}
+      {% for size in sizes %}
+      <div class="{{ size }}">
+        <div id="{{ size }}-example-carousel" class="h-100 carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            {% assign active="active" %}
+            {% for example in site.examples %}
+            {% if example.display == nil or example.display == size %}
+            <div class="h-100 carousel-item {{ active }}" data-bs-interval="10000">
+              <div class="h-100 d-flex flex-column">
+                <div class="flex-grow-1 mx-auto">
+                  {{ example.content | markdownify }}
+                </div>
+                <div class="text-light text-center">
+                  <p>{{ example.description }}</p>
+                </div>
+              </div>
+            </div>
+            {% assign active = "" %}
+            {% endif %}
+            {% endfor %}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#{{ size }}-example-carousel"
+                  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#{{ size }}-example-carousel"
+                  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+<main class="content container">
+  <div class="what-is-erlang">
+    <h2 class="h4">O que é o Erlang?</h2>
+    <p class="ps-3">Erlang é uma linguagem de programação usada para construir
+      sistemas de tempo real flexíveis e altamente escaláveis com requisitos de
+      alta disponibilidade.
+      Alguns de seus usos são em telecomunicações, bancos, comércio eletrônico,
+      telefonia computadorizada e mensagens instantâneas.
+      O sistema de tempo de execução do Erlang possui suporte integrado para
+      concorrência, distribuição e tolerância a falhas.</p>
+    <a href="{{ '/doc/getting_started/intro.html' | relative_url }}" role="button"
+       class="btn btn-primary float-end d-inline-flex align-items-center">
+      Guia rápido do Erlang
+      {% include svg-symbol.html symbol="arrow-right" width="24" height="24" %}
+    </a>
+  </div>
+  <div class="what-is-otp">
+    <h2 class="h4">What is OTP?</h2>
+    <p class="ps-3">OTP é um conjunto de bibliotecas Erlang e princípios de
+      design que fornecem middleware para desenvolver esses sistemas.
+      Inclui seu próprio banco de dados distribuído, aplicações para interfacear
+      com outras linguagens, ferramentas de depuração e gerenciamento de
+      versões.</p>
+    <a href="{{ '/doc/design_principles/des_princ.html' | relative_url }}" role="button"
+       class="btn btn-primary float-end d-inline-flex align-items-center">
+      Começando com o OTP
+      {% include svg-symbol.html symbol="arrow-right" width="24" height="24" %}
+    </a>
+  </div>
+  <div class="news">
+    <h2 class="h4">Notícias</h2>
+    <dl class="ps-3">
+      {% assign all_news = site.news | concat: site.posts | sort: "date" | reverse %}
+      {% for news in all_news limit:3 %}
+      <dt>
+        <h3 class="h5"><a href="{{ news.url | relative_url }}">{{ news.title }}</a></h3>
+        <small class="ps-2">{{ news.date | date: "%B %d, %Y" }} por {{ news.author }}</small>
+      </dt>
+      <dd class="px-3 py-1">
+        {{ news.lead | default: news.excerpt | strip_html | truncate: 250 }}
+      </dd>
+      {% endfor %}
+    </dl>
+  </div>
+  <div class="participate">
+    <h2 class="h4">Participe</h2>
+    <p class="ps-3">
+      <a href="https://erlef.org"><img alt="Junte-se à Erlang Ecosystem Foundation"
+                                       src="{{ '/assets/img/eef.png' | relative_url }}" class="img-fluid"
+                                       width="174"></a>
+    </p>
+  </div>
+</main>
+<script src="{{'/assets/js/prismjs/prism.js' | prepend: site.baseurl }}"></script>
+<script src="{{'/assets/js/prismjs/components/prism-erlang.js' | prepend: site.baseurl }}"></script>
