@@ -41,4 +41,4 @@ recomenda-se consultar os documentos
 e
 [Desenvolvendo o Erlang/OTP](https://github.com/erlang/otp/blob/master/HOWTO/DEVELOPMENT.md).
 
-[cross compiler]: https://en.wikipedia.org/wiki/Cross_compiler
+[compilador cruzado]: https://en.wikipedia.org/wiki/Cross_compiler
